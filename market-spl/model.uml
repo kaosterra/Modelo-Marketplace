@@ -42,6 +42,10 @@
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_UavGQFldEeSGH_NfwT774w" name="id" type="_4sWwIFlbEeSGH_NfwT774w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_qwNaoFumEeSe57WlPAXnBQ" name="name" type="_FuJygFlcEeSGH_NfwT774w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_idnLEF8DEeSkEoZDFu2o5A" name="buyer" type="_sfQPMFldEeSGH_NfwT774w" association="_idnLE18DEeSkEoZDFu2o5A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_idnLEV8DEeSkEoZDFu2o5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_idnLEl8DEeSkEoZDFu2o5A" value="1"/>
+    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_9vfdYFlcEeSGH_NfwT774w" name="ShoppingCartItem">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_RB0CoFldEeSGH_NfwT774w" name="id" type="_4sWwIFlbEeSGH_NfwT774w"/>
@@ -71,10 +75,6 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_5oESkFxdEeSNVuu8gEArbA" name="creditCard" type="_ZoJ3QFlmEeSGH_NfwT774w" aggregation="composite" association="_5oESk1xdEeSNVuu8gEArbA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5oESkVxdEeSNVuu8gEArbA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5oESklxdEeSNVuu8gEArbA" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_5iEtYFxfEeSNVuu8gEArbA" name="shoppingCart" type="_6re50FlcEeSGH_NfwT774w" association="_5iEtY1xfEeSNVuu8gEArbA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5iEtYVxfEeSNVuu8gEArbA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5iEtYlxfEeSNVuu8gEArbA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_BOauAFxgEeSNVuu8gEArbA" name="address" type="_qXmwwFleEeSGH_NfwT774w" aggregation="composite" association="_BOauA1xgEeSNVuu8gEArbA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BOauAVxgEeSNVuu8gEArbA" value="1"/>
@@ -362,12 +362,6 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5oESllxdEeSNVuu8gEArbA" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_5iEtY1xfEeSNVuu8gEArbA" name="shopping_cart_buyer" memberEnd="_5iEtZFxfEeSNVuu8gEArbA _5iEtYFxfEeSNVuu8gEArbA">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_5iEtZFxfEeSNVuu8gEArbA" name="buyer" type="_sfQPMFldEeSGH_NfwT774w" association="_5iEtY1xfEeSNVuu8gEArbA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5iEtZVxfEeSNVuu8gEArbA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5iEtZlxfEeSNVuu8gEArbA" value="1"/>
-    </ownedEnd>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_BOauA1xgEeSNVuu8gEArbA" name="buyer_address" memberEnd="_BOauBFxgEeSNVuu8gEArbA _BOauAFxgEeSNVuu8gEArbA">
     <ownedEnd xmi:type="uml:Property" xmi:id="_BOauBFxgEeSNVuu8gEArbA" name="buyer" type="_sfQPMFldEeSGH_NfwT774w" association="_BOauA1xgEeSNVuu8gEArbA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BOauBVxgEeSNVuu8gEArbA" value="1"/>
@@ -384,6 +378,12 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_RU3tAV75EeSySKPH7Iv3Og" name="wishList" type="_JFaDEFrZEeSdNJcyLzvvgg" association="_RU3tAF75EeSySKPH7Iv3Og">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RU3tAl75EeSySKPH7Iv3Og" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RU3tA175EeSySKPH7Iv3Og" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_idnLE18DEeSkEoZDFu2o5A" name="shopping_cart_buyer" memberEnd="_idnLFF8DEeSkEoZDFu2o5A _idnLEF8DEeSkEoZDFu2o5A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_idnLFF8DEeSkEoZDFu2o5A" name="shoppingCart" type="_6re50FlcEeSGH_NfwT774w" association="_idnLE18DEeSkEoZDFu2o5A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_idnLFV8DEeSkEoZDFu2o5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_idnLFl8DEeSkEoZDFu2o5A" value="1"/>
     </ownedEnd>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A_2lcFleEeSGH_NfwT774w">
