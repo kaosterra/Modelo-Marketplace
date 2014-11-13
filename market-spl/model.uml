@@ -214,6 +214,8 @@
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_cb6MwFlwEeSGH_NfwT774w" name="value" type="_dqPYMFlcEeSGH_NfwT774w"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_VM74wFrdEeSdNJcyLzvvgg" name="status" type="_FuJygFlcEeSGH_NfwT774w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_n3awsGrdEeSOUKKsY1d3-A" name="date" type="_Xl4-MFleEeSGH_NfwT774w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qu3CcGreEeSOUKKsY1d3-A" name="expiration" type="_Xl4-MFleEeSGH_NfwT774w"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_bEoQwFlwEeSGH_NfwT774w" name="bonus_buyer" memberEnd="_bEoQwVlwEeSGH_NfwT774w _bEnpsFlwEeSGH_NfwT774w">
     <ownedEnd xmi:type="uml:Property" xmi:id="_bEoQwVlwEeSGH_NfwT774w" name="bonus" type="_Ia2SMFlwEeSGH_NfwT774w" association="_bEoQwFlwEeSGH_NfwT774w">
@@ -236,6 +238,8 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tgBHwVzCEeSNVuu8gEArbA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tgBHwlzCEeSNVuu8gEArbA" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vKuRkGV_EeSRZoZm_XOr4Q" name="date" type="_Xl4-MFleEeSGH_NfwT774w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mJ1ioGrfEeSOUKKsY1d3-A" name="totalPoints" type="_OmfPsFldEeSGH_NfwT774w"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_o3PnA1prEeS4ptxhYWPzVA" name="category_category" memberEnd="_o3PnBFprEeS4ptxhYWPzVA _o3PnAFprEeS4ptxhYWPzVA">
     <ownedEnd xmi:type="uml:Property" xmi:id="_o3PnBFprEeS4ptxhYWPzVA" name="category" type="_AU2ykFlcEeSGH_NfwT774w" association="_o3PnA1prEeS4ptxhYWPzVA">
